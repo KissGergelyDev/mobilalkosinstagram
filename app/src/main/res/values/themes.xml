@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mobilalkosinstagram" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/dark</item>
+        <item name="android:colorBackground">@color/dark</item>
+        <item name="colorSurface">@color/dark</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/dark</item>
+        <item name="colorSecondary">@android:color/transparent</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+
+    <style name="Theme.Mobilalkosinstagram" parent="Base.Theme.Mobilalkosinstagram" />
+</resources>
