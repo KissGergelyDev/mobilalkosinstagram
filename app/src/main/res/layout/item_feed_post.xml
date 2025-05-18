@@ -31,42 +31,102 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/placeholder_city"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingEnd="8dp" />
+
     </RelativeLayout>
 
     <!-- Post image -->
     <ImageView
+        android:id="@+id/postImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@drawable/cat"
         android:contentDescription="@string/post_image_desc" />
 
-    <!-- Post actions -->
+    <!-- Post actions: like, comment, update, delete -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:gravity="center_vertical">
 
         <ImageButton
-            android:layout_width="48dp"
+            android:id="@+id/likeButton"
+            android:layout_width="0dp"
             android:layout_height="48dp"
+            android:layout_weight="1"
             android:scaleType="fitCenter"
             android:contentDescription="@string/like_button_desc"
             android:src="@drawable/ic_favorite_border"
             android:background="?attr/selectableItemBackgroundBorderless"
             app:tint="@color/white" />
 
-
         <ImageButton
-            android:layout_width="48dp"
+            android:id="@+id/commentButton"
+            android:layout_width="0dp"
             android:layout_height="48dp"
+            android:layout_weight="1"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_comment"
             android:contentDescription="@string/comment_button_desc"
-            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_comment"
             android:background="?attr/selectableItemBackgroundBorderless"
             app:tint="@color/white" />
+
+        <Button
+            android:id="@+id/updatePostButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="@string/update_post" />
+
+        <Button
+            android:id="@+id/deletePostButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete_post" />
+    </LinearLayout>
+
+    <!-- Edit description section - initially hidden -->
+    <LinearLayout
+        android:id="@+id/editDescriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/new_description"
+            android:background="@color/black"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/saveUpdateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_new_description"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <!-- Post description -->

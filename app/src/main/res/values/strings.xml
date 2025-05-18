@@ -63,4 +63,14 @@
     <string name="logo_desc">logo_desc</string>
     <string name="feed_content_desc">List of posts in your feed</string>
     <string name="nav_bar_desc">Main navigation menu</string>
+    <string name="add_post">Új poszt</string>
+    <string name="update_post">Poszt frissítése</string>
+    <string name="delete_post">Poszt törlése</string>
+    <string name="new_description">Új leírás...</string>
+    <string name="save_new_description">Mentés</string>
+    <string name="placeholder_city">Placeholder city</string>
+    <string name="sort_based_on_description">Hosszú leírású posztok</string>
+    <string name="sort_based_on_location">Hely szerint rendezés</string>
+    <string name="profile_content">A profilod üres</string>
+    <string name="sort_based_on_short_description">Rövid leírású posztok</string>
 </resources>
